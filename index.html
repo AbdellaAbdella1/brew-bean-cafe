@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brew & Bean Café | Home</title>
-    <meta name="description" content="Welcome to Brew & Bean Café - the best coffee in Cardiff">
+    <meta name="description" content="Welcome to Brew & Bean Café - Cardiff's finest coffee experience">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -22,43 +22,83 @@
     </header>
 
     <main>
-        <section class="hero" aria-labelledby="hero-heading">
+        <!-- Hero Section -->
+        <section class="hero-section" aria-labelledby="hero-heading">
             <div class="hero-content">
-                <h1 id="hero-heading">Welcome to Brew & Bean Café</h1>
-                <p>Experience the finest coffee and homemade pastries in the heart of Cardiff</p>
+                <h2 id="hero-heading">Experience Cardiff's Finest Coffee</h2>
+                <p>Freshly roasted beans, homemade pastries, and cozy atmosphere</p>
                 <a href="menu.html" class="btn-primary">View Our Menu</a>
             </div>
         </section>
 
-        <section class="features" aria-labelledby="features-heading">
+        <!-- Coffee Story Section -->
+        <section class="story-section" aria-labelledby="story-heading">
+            <h2 id="story-heading">Our Coffee Story</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <h3>From Bean to Cup</h3>
+                    <p>At Brew & Bean Café, our journey begins in the misty highlands of Ethiopia, where coffee was first discovered. We source our beans directly from sustainable farms, ensuring every cup supports both quality and ethical practices.</p>
+                    
+                    <h3>The Art of Roasting</h3>
+                    <p>Our master roaster carefully roasts each batch to perfection, bringing out unique flavor profiles. Whether it's the chocolatey notes of Brazilian beans or the fruity undertones of Kenyan AA, we celebrate coffee's diversity.</p>
+                    
+                    <h3>Our Philosophy</h3>
+                    <p>We believe coffee is more than a drink - it's a moment of connection. Each cup should tell a story, from the farmer who grew it to the barista who crafts it with care.</p>
+                </div>
+                <div class="story-images">
+                    <img src="assets/images/beans%20coffe.jpg" alt="Fresh coffee beans being sorted" loading="lazy">
+                    <img src="assets/images/coffe%20latte%20pic.jpg" alt="Barista crafting a perfect latte" loading="lazy">
+                    <img src="assets/images/coffe%20env.jpg" alt="Cozy café environment at Brew & Bean" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" aria-labelledby="features-heading">
             <h2 id="features-heading">Why Choose Brew & Bean?</h2>
-            <div class="feature-grid">
-                <article class="feature-card">
+            <div class="features-grid">
+                <div class="feature-card">
                     <h3>Fresh Coffee</h3>
                     <p>Daily roasted beans from ethical sources around the world</p>
-                </article>
-                <article class="feature-card">
+                </div>
+                <div class="feature-card">
                     <h3>Homemade Pastries</h3>
                     <p>Baked fresh every morning in our kitchen</p>
-                </article>
-                <article class="feature-card">
+                </div>
+                <div class="feature-card">
                     <h3>Cozy Atmosphere</h3>
                     <p>Perfect spot for relaxing or getting work done</p>
-                </article>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
+            <!-- Opening Hours Column -->
             <div class="footer-section">
                 <h3>Opening Hours</h3>
                 <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
                 <p>Saturday - Sunday: 8:00 AM - 6:00 PM</p>
             </div>
+            
+            <!-- Visit Us Column -->
             <div class="footer-section">
                 <h3>Visit Us</h3>
                 <p>38 Orbit St, Cardiff CF24 0JX</p>
+            </div>
+            
+            <!-- Follow Us Column -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page" class="social-icon">
+                        <img src="assets/images/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page" class="social-icon">
+                        <img src="assets/images/icons/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
