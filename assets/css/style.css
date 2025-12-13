@@ -12,6 +12,9 @@
     --text-color: #333;
     --background-color: #FFF8DC;
     --white: #FFFFFF;
+    --input-bg: #f9f9f9;
+    --input-border: #ddd;
+    --success-color: #4CAF50;
 }
 
 body {
@@ -106,6 +109,9 @@ main {
     border-radius: 25px;
     font-weight: 600;
     transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
 .btn-primary:hover {
@@ -292,6 +298,81 @@ address a {
     text-decoration: none;
 }
 
+/* Contact Form Styles */
+.customer-details {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--accent-color);
+}
+
+.contact-form {
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background-color: var(--input-bg);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+/* Additional Contact Information */
+.contact-extra {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--input-border);
+}
+
+.contact-extra h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-extra p {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.contact-extra strong {
+    color: var(--secondary-color);
+}
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
@@ -406,6 +487,10 @@ footer {
     .social-icons {
         gap: 10px;
     }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -436,5 +521,15 @@ footer {
     .social-icon img {
         width: 20px;
         height: 20px;
+    }
+    
+    .contact-info,
+    .map-container {
+        padding: 1.5rem;
+    }
+    
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }

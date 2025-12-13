@@ -40,6 +40,53 @@
                     
                     <h3>Get In Touch</h3>
                     <p>Email: <a href="mailto:hello@brewbean.cafe">hello@brewbean.cafe</a></p>
+                    
+                    <!-- Customer Contact Details Section -->
+                    <div class="customer-details">
+                        <h3>Customer Information</h3>
+                        <form class="contact-form" id="customerForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="booking">Table Booking</option>
+                                    <option value="catering">Catering Services</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" checked>
+                                    Subscribe to our newsletter for updates and promotions
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
                 </div>
                 
                 <div class="map-container">
@@ -54,6 +101,15 @@
                         referrerpolicy="no-referrer-when-downgrade"
                         title="Google Maps location of Brew & Bean Café at 38 Orbit St, Cardiff CF24 0JX">
                     </iframe>
+                    
+                    <!-- Additional Contact Information -->
+                    <div class="contact-extra">
+                        <h3>Additional Information</h3>
+                        <p><strong>Parking:</strong> Street parking available nearby</p>
+                        <p><strong>Accessibility:</strong> Wheelchair accessible with ramp entry</p>
+                        <p><strong>WiFi:</strong> Free high-speed WiFi available</p>
+                        <p><strong>Group Bookings:</strong> Please contact us for groups of 8+</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -81,6 +137,9 @@
                     <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page" class="social-icon">
                         <img src="assets/images/icons/facebook.svg" alt="Facebook">
                     </a>
+                    <a href="https://x.com" target="_blank" aria-label="Visit our X (Twitter) page" class="social-icon">
+                        <img src="assets/images/icons/x.svg" alt="X (Twitter)">
+                    </a>
                     <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page" class="social-icon">
                         <img src="assets/images/icons/instagram.svg" alt="Instagram">
                     </a>
@@ -88,5 +147,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('customerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            
+            // Simple validation
+            if (name && email && subject) {
+                alert(`Thank you ${name}! Your message has been sent. We'll get back to you at ${email} soon.`);
+                document.getElementById('customerForm').reset();
+            }
+        });
+    </script>
 </body>
 </html>
