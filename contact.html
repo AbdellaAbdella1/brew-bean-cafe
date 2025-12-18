@@ -5,8 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brew & Bean Café | Contact</title>
     <meta name="description" content="Get in touch with Brew & Bean Café in Cardiff">
-    <!-- FIXED: Added forward slash for Vercel deployment -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- CHANGED: Relative path for Vercel -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* EMERGENCY FALLBACK CSS */
+        body { 
+            background-color: #FFF8DC !important; 
+            color: #333 !important; 
+            font-family: Arial, sans-serif !important; 
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 20px !important;
+        }
+        header { 
+            background-color: #8B4513 !important; 
+            color: white !important; 
+            padding: 20px !important; 
+            margin-bottom: 20px !important;
+            border-radius: 8px !important;
+        }
+        nav ul { 
+            display: flex !important; 
+            list-style: none !important; 
+            gap: 20px !important; 
+            padding: 0 !important; 
+            margin: 0 !important;
+        }
+        nav a { 
+            color: white !important; 
+            text-decoration: none !important; 
+            font-weight: bold !important;
+        }
+        nav a:hover { color: #F4A460 !important; }
+        footer { 
+            background-color: #8B4513 !important; 
+            color: white !important; 
+            padding: 30px !important; 
+            margin-top: 40px !important;
+            border-radius: 8px !important;
+        }
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100% !important;
+            padding: 10px !important;
+            margin: 5px 0 15px 0 !important;
+            border: 1px solid #ddd !important;
+            border-radius: 4px !important;
+        }
+        .btn-primary {
+            background-color: #D2691E !important;
+            color: white !important;
+            padding: 12px 30px !important;
+            border: none !important;
+            border-radius: 4px !important;
+            cursor: pointer !important;
+            font-weight: bold !important;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -136,13 +192,13 @@
                 <h3>Follow Us</h3>
                 <div class="social-icons">
                     <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page" class="social-icon">
-                        <img src="/assets/images/icons/facebook.svg" alt="Facebook">
+                        <img src="assets/images/icons/facebook.svg" alt="Facebook">
                     </a>
                     <a href="https://x.com" target="_blank" aria-label="Visit our X (Twitter) page" class="social-icon">
-                        <img src="/assets/images/icons/x.svg" alt="X (Twitter)">
+                        <img src="assets/images/icons/x.svg" alt="X (Twitter)">
                     </a>
                     <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page" class="social-icon">
-                        <img src="/assets/images/icons/instagram.svg" alt="Instagram">
+                        <img src="assets/images/icons/instagram.svg" alt="Instagram">
                     </a>
                 </div>
             </div>
