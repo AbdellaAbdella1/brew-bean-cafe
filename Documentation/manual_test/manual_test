@@ -1,0 +1,248 @@
+Manual Testing Documentation - Brew & Bean Café
+Project Overview
+Brew & Bean Café is a fictional coffee shop website created as part of a web development project. The purpose of this website is to establish an inviting and professional online presence for the café, serving as the primary destination where visitors can explore the café's story, view the coffee menu, and get in touch for bookings or inquiries.
+
+The Brew & Bean Café website is currently live at: https://brew-bean-cafe-bpm8umlm6-abdell-abdellas-projects.vercel.app/
+
+Code Validation
+CSS Validation
+Validation Result: No errors found
+
+Method Used: W3C CSS Validator - Direct Input Method
+
+All CSS from assets/css/style.css was validated
+
+No syntax errors detected
+
+All selectors and properties are valid
+
+Vendor prefixes checked for compatibility
+
+Screenshot: (CSS validation passed successfully)
+
+HTML Validation
+index.html
+Validation Result: Passed with 0 errors
+
+Notes:
+
+Semantic HTML structure validated
+
+All required attributes present
+
+No missing alt attributes on images
+
+Proper ARIA labels implemented
+
+Screenshot: (HTML validation for index.html - 0 errors)
+
+menu.html
+Validation Result: Passed with 0 errors
+
+Notes:
+
+Menu items properly structured with semantic elements
+
+Role attributes correctly implemented for accessibility
+
+Price formatting validated
+
+Responsive design elements checked
+
+Screenshot: (HTML validation for menu.html - 0 errors)
+
+contact.html
+Validation Result: Passed with 0 errors
+
+Notes:
+
+Form validation implemented with JavaScript
+
+All form fields have proper labels and attributes
+
+Google Maps embed properly configured
+
+Contact information formatted correctly
+
+Screenshot: (HTML validation for contact.html - 0 errors)
+
+Manual Testing Checklist
+1. Navigation Testing
+Home link navigates to index.html
+
+Menu link navigates to menu.html
+
+Contact link navigates to contact.html
+
+Active page correctly highlighted (aria-current="page")
+
+Mobile navigation collapses properly
+
+Logo/header consistent across all pages
+
+2. Home Page Testing (index.html)
+Hero section displays correctly with background gradient
+
+"View Our Menu" button links to menu.html
+
+Coffee Story section images load properly
+
+Responsive images scale correctly on different screens
+
+Passion section text alignment correct
+
+About section feature cards display in grid
+
+Features section hover effects work
+
+Footer displays contact information correctly
+
+3. Menu Page Testing (menu.html)
+Menu categories display with proper styling
+
+Menu items show name, description, and price
+
+Hover effects on menu items work
+
+Responsive layout - items stack on mobile
+
+Price formatting consistent (£ symbol)
+
+Menu categories clearly separated
+
+All images have alt text
+
+4. Contact Page Testing (contact.html)
+Contact form fields display correctly
+
+Required fields marked with asterisk
+
+Form validation works (JavaScript)
+
+Google Maps embed loads correctly
+
+Opening hours display properly
+
+Social media icons link correctly
+
+Form submission shows success message
+
+Phone number links work (tel:)
+
+Email link works (mailto:)
+
+5. Responsive Design Testing
+Desktop view (1200px+) - all elements display correctly
+
+Tablet view (768px-1199px) - grids adjust properly
+
+Mobile view (<768px) - navigation becomes vertical
+
+Images scale proportionally on all devices
+
+Text remains readable on small screens
+
+Buttons and form fields remain usable on touch devices
+
+6. Accessibility Testing
+Alt text present on all images
+
+ARIA labels implemented where needed
+
+Color contrast meets WCAG standards
+
+Keyboard navigation works (Tab key)
+
+Screen reader compatibility tested
+
+Focus states visible on interactive elements
+
+Semantic HTML structure followed
+
+7. Performance Testing
+Page load time under 3 seconds
+
+Images optimized with lazy loading
+
+CSS minified and efficient
+
+No JavaScript errors in console
+
+Google Maps loads asynchronously
+
+Font loading optimized
+
+8. Browser Compatibility
+Chrome (latest) - All features work
+
+Firefox (latest) - All features work
+
+Safari (latest) - All features work
+
+Edge (latest) - All features work
+
+Mobile Chrome - Responsive design works
+
+Mobile Safari - Responsive design works
+
+9. Cross-Device Testing
+iPhone (various models) - Display correct
+
+Android phones (various models) - Display correct
+
+iPad/Tablets - Layout adjusts properly
+
+Desktop computers - Full features available
+
+Laptop screens - Responsive scaling works
+
+Issues Found & Resolutions
+Issue 1: CSS !important Overuse
+Problem: Excessive use of !important declarations in initial CSS
+Resolution: Removed all unnecessary !important declarations and improved selector specificity
+
+Issue 2: W3C Validation Error
+Problem: Validator couldn't access local CSS file
+Resolution: Used "By Direct Input" validation method and added type="text/css" to link tags
+
+Issue 3: Missing Form Action
+Problem: Contact form lacked action attribute in initial version
+Resolution: Added proper form handling and JavaScript validation
+
+Issue 4: Image Responsiveness
+Problem: Some images didn't scale properly on mobile
+Resolution: Added max-width: 100% and height: auto to all images
+
+Issue 5: Navigation on Mobile
+Problem: Navigation menu didn't collapse properly on small screens
+Resolution: Implemented media queries for mobile navigation
+
+Testing Summary
+Test Category	Passed	Failed	Notes
+Navigation	6/6	0	All navigation functions work correctly
+Home Page	8/8	0	All home page elements display properly
+Menu Page	6/6	0	Menu displays correctly on all devices
+Contact Page	9/9	0	Form and contact info work correctly
+Responsive Design	6/6	0	Site works on all screen sizes
+Accessibility	7/7	0	Meets WCAG accessibility standards
+Performance	6/6	0	Good performance scores
+Browser Compatibility	6/6	0	Works on all modern browsers
+Cross-Device	5/5	0	Consistent experience across devices
+Total Pass Rate: 100% (59/59 tests passed)
+
+Recommendations for Future Development
+Add a booking system for table reservations
+
+Implement a newsletter subscription feature
+
+Add a gallery section for café photos
+
+Create an online ordering system for takeaway
+
+Add customer reviews/testimonials section
+
+Implement a loyalty program feature
+
+Add seasonal menu updates functionality
+
+Create an events calendar for live music/special events
